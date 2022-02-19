@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base Conversion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="heading">
+        <h1>Base Converter</h1>
+        <p>Convert among Binary, Octal, Decimal, Hexa-Decimal</p>
+    </div>
+    <section id="main">
+        <div id="input">
+
+            <label for="number">Enter Number </label>
+            <input type="text" name="number" id="number">
+            <div>
+                <label for="base">From Base</label>
+                <select name="base" id="base" required>
+                    <!-- <option value="">--Select Base--</option> -->
+                    <option value="2">Binary</option>
+                    <option value="8">Octal</option>
+                    <option value="10">Decimal</option>
+                    <option value="16">Hexa-Decimal</option>
+                </select>
+                <button id="calc" class="btn" onclick="calculate();">Calculate</button>
+                <button id="reset" class="btn" onclick="reset();">Reset</button>
+            </div>
+        </div>
+        <div id="answer">
+            <div id="bin">
+                <label for="2">To Binary</label> <input type="text" id="2" class="Result" readonly>
+            </div>
+            <div id="oct">
+                <label for="8">To Octal</label> <input type="text" id="8" class="Result" readonly>
+            </div>
+            <div id="dec">
+                <label for="10">To Decimal</label> <input type="text" id="10" class="Result" readonly>
+            </div>
+            <div id="hex">
+                <label for="16">To Hexa-Decimal</label> <input type="text" id="16" class="Result" readonly>
+            </div>
+
+
+            <div id="bin2comp">
+                <label for="bin2">Binary signed 2's comp</label>
+                <input type="text" id="bin2" readonly>
+            </div>
+            <div id="dec2comp">
+                <label for="dec2">Decimal from signed 2's comp</label>
+                <input type="text" id="dec2" readonly>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="script.js"></script>
+
+</html>
